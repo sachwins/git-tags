@@ -1,0 +1,59 @@
+1. Create a repository and push to github.
+— Login to GitHub and create a new repository
+— Used ( git remote set-url origin git@github.com:sachwins/git-tags.git)
+— Used ( git push -u origin master ) to push on GitHub
+
+2. Create two files in master branch, then create a tag 1.0.0 for first release from master.
+— Files created using ( touch file1.txt ) ( touch file2.txt )
+— Files added using ( git add . )
+— Files commit using ( git commit -m "ver 1.0.0" )
+— Used ( git tag 1.0.0 )
+
+3. Now, perform some changes in previous files and create another tag 1.0.1.
+— Files added using ( git add . )
+— Files commit using ( git commit -m "ver 1.0.1 )
+— Used ( git tag 1.0.1 )
+
+4. Now, create another file file3 and create a tag 1.1.0.
+— Files added using ( touch file3.txt )
+— Files added using ( git add . )
+— Files commit using ( git commit -m "ver 1.1.0" )
+— Used ( git tag 1.1.0 )
+
+5. Now in 1.0.1 release, do some changes in existing files and create another tag 1.0.2.
+— Used ( git checkout 1.0.1 ) to enter in existing tag (Showing below msg)
+Note: checking out '1.0.1'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+HEAD is now at 5d6c21c ver 1.0.1
+
+- Make some changes in files.
+— Files added using ( git add . )
+— Files commit using ( git commit -m "ver 1.0.2" )
+— Used ( git tag 1.0.2 ) 
+
+
+6. Also do some changes in release 1.1.0, create a tag for next release 1.1.1.
+— Used ( git checkout 1.1.0 ) to enter in existing tag (Showing below msg)
+Previous HEAD position was e48ee33 ver 1.0.2
+HEAD is now at bf825c3 ver 1.1.0
+
+— Files added using ( git add . )
+— Files commit using ( git commit -m "ver 1.1.1" )
+— Used ( git tag tag 1.1.1 ) 
+
+
+— Pushed to GitHub repository using ( git push -u origin master )
+
+Note: Tags should have clear description and all tags should be pushed to github.
+
+All tags are pushed to GitHub using command ( git push --tag )
+All files are pushed to GitHub using command ( git push origin master )
