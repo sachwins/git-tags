@@ -48,7 +48,7 @@ HEAD is now at bf825c3 ver 1.1.0
 
 — Files added using ( git add . )
 — Files commit using ( git commit -m "ver 1.1.1" )
-— Used ( git tag tag 1.1.1 ) 
+— Used ( git tag 1.1.1 ) 
 
 
 — Pushed to GitHub repository using ( git push -u origin master )
